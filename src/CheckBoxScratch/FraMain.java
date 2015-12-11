@@ -7,6 +7,7 @@ public class FraMain extends JFrame {
     
     public FraMain(){
         PanMain pan = new PanMain();
+        //setLayout(new BorderLayout());
         add(new PanMain());
         setTitle("checkBox Scratch");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//DO_NOTHING_ON_CLOSE

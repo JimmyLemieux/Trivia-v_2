@@ -1,11 +1,14 @@
-
-package TimerScratch;
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package QuestionLabels;
 
 /**
  *
  * @author lemij7026
  */
-public class Timer {
+public class Main {
 
     /**
      * @param args the command line arguments
