@@ -16,44 +16,54 @@ public class PanMain extends JPanel implements ActionListener {
     String filePath = "H:\\NetBeansProjects\\Trivia\\src\\MainFunctionality\\JSON.json";
     JLabel label;
     JButton[] btn;
+    //int i;
 
+    JSONObject object;
     public PanMain() throws Exception {
         label = new JLabel();
         btn = new JButton[3];
         FileReader reader = new FileReader(filePath);
         JSONParser parser = new JSONParser();
-        JSONObject object = (JSONObject) parser.parse(reader);
-        String sQuestion = (String) object.get("Question1");
-        String sAnswer1 = (String) object.get("wAns");
-        String sAnswer2 = (String) object.get("wAns1");
-        String sAnswer3 = (String) object.get("Answer");
-        System.out.println(sQuestion);
-        label.setText(sQuestion);
-        add(label);
+        object = (JSONObject) parser.parse(reader);
+
+        //Options array
+        String[] OPTIONS = new String[3];
 
 
-        btn[0] = new JButton(sAnswer1);
-        btn[1] = new JButton(sAnswer2);
-        btn[2] = new JButton(sAnswer3);
-
-        for (int i = 0; i < 3; i++) {
-            btn[i].addActionListener(this);
-            add(btn[i]);
+        //Loop through the questions
+        for (int i = 1; i <= 5;i++) {
+           String questions = (String) object.get("Q" + i);
+            System.out.println(questions);
         }
 
 
+       
+
+        //The Options
+        for (int o = 0; o < 3; o++) {
+            btn[o] = new JButton((String) object.get("O" + o));
+            btn[o].addActionListener(this);
+            add(btn[o]);
+            
+            
+        }
 
     }
 
- 
+
 
     @Override
-    public void actionPerformed(ActionEvent e) {
-        if(e.getSource() == btn[0] || e.getSource() == btn[1] ){
-             System.out.println("Wrong");
-         } else {
-             
-             System.out.println("CORRECT!!");
-         }
+        public void actionPerformed(ActionEvent e) {
+        for(int j = 0;j<btn.length;j++){
+            if(e.getSource() == btn[j]){
+                
+                int index=j;
+                if(btn[j] == object.get("Answer")){
+                    System.out.println("CORRECT");
+                }
+                break;
+            }
+            
+        }
     }
 }
