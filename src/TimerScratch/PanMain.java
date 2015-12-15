@@ -30,13 +30,13 @@ public class PanMain extends JPanel implements ActionListener {
         add(label, BorderLayout.CENTER);
         
         
-        //a
+        
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
             
             @Override
             public void run() {
-                counter+=10;
+                counter++;
                 label.setText(String.valueOf(counter));
                 label.repaint();
                 label.revalidate();
@@ -46,7 +46,7 @@ public class PanMain extends JPanel implements ActionListener {
                 }
                     
             }
-        }, 0, 1);
+        }, 0, 1000);
       
     }
 

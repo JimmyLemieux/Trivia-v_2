@@ -20,12 +20,16 @@ public class heyJSON {
         //||||THIS IS FOR THE ARRAY OF JSON||||\\
         FileReader readerArr = new FileReader( "H:\\NetBeansProjects\\Trivia\\src\\JSONScratch\\jsonFileArray.json");
         JSONParser parser = new JSONParser();
-        JSONObject jsonArr = (JSONObject) parser.parse(readerArr);
-        JSONArray theStuff = (JSONArray) jsonArr.get("employees");
+        JSONObject jsonObj = (JSONObject) parser.parse(readerArr);
+        JSONArray theStuff = (JSONArray) jsonObj.get("employees");
         //Iterate through the Array
         for(int i = 0;i<theStuff.size();i++){
-            JSONObject jsonOut = (JSONObject) theStuff.get(i);
-            System.out.println(jsonOut);
+            JSONObject jsonOut =( JSONObject) theStuff.get(i);
+            String firstName = (String) jsonOut.get("firstName");
+            String lastName = (String) jsonOut.get("lastName");
+            System.out.println(firstName);
+            System.out.println(lastName);
+            
         }
         
         
