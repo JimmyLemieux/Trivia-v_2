@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package ArRadioButtonsScratch;
+package MikesArRadioButtonsScratch;
 
 import javax.swing.ButtonGroup;
 import javax.swing.JPanel;
@@ -29,9 +29,6 @@ public class PanMain extends JPanel {
             for (int i = 0; i < radioButton.length;i++){
                 bG.add(radioButton[i]);
                 this.add(radioButton[i]);
-                
             }
-                
-
     }
 }
