@@ -21,45 +21,24 @@ public class PanMain extends JPanel implements ActionListener {
     //int i;
     JSONObject object;
     JSONArray jsonArr;
+    String Options;
+    String placeHolderOption = "";
+    int i = 1;
 
     public PanMain() throws Exception {
         label = new JLabel();
-        btn = new JButton[3];
+
         FileReader reader = new FileReader(filePath);
         JSONParser parser = new JSONParser();
         object = (JSONObject) parser.parse(reader);
-        //For the array of answers
-        //  JSONObject jsonObjArr = (JSONObject) parser.parse(reader.toString());
 
-        //Loop through the questions
-        for (int i = 1; i <= 5;) {
-            String questions = (String) object.get("Q" + i);
-            System.out.println(questions);
-            jsonArr = (JSONArray) object.get("Answers" + i);
-            String A1 = (String) jsonArr.get(0).toString();
-            System.out.println(A1);
 
-            //For The answers
-         //   System.out.println(jsonArr);
-            i++;
+        btn = new JButton[3];
+        for (int g = 0; g < btn.length; g++) {
+            btn[g] = new JButton("Question");
         }
-
-        //The Answers
-
-/*
-        for (int j = 0; j < jsonArr.size(); j++) {
-            JSONObject jsonOut = (JSONObject) jsonArr.get(j);
-            String S1 = (String) jsonOut.get(j).toString();
-            /*     String O1 = (String) jsonOut.get("O1");
-             String O2 = (String) jsonOut.get("O2");
-             String O3 = (String) jsonOut.get("O3");
-             System.out.println(O1);
-             System.out.println(O2);
-             System.out.println(O3);
-            System.out.println(S1);
-
-        }
- */
+        //init buttons
+        updateButton();
 
 
 
@@ -67,16 +46,29 @@ public class PanMain extends JPanel implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        for (int j = 0; j < btn.length; j++) {
-            if (e.getSource() == btn[j]) {
-
-                int index = j;
-                if (btn[j] == object.get("Answer")) {
-                    System.out.println("CORRECT");
-                }
-                break;
-            }
-
+        //This would represent correct answer
+        if (e.getSource() == btn[0]) {
+            //Increrment by 1 when answer in correct
+            i++;
+            System.out.println(i);
+            updateButton();
         }
+    }
+
+    //The Refresh button function
+    public void updateButton() {
+        String questions = (String) object.get("Q" + i);
+        System.out.println(questions);
+        jsonArr = (JSONArray) object.get("Answers" + i);
+        //   btn = new JButton[3];
+        for (int i = 0; i < btn.length; i++) {
+            //Remove old buttons and make new buttons based on new options
+            remove(btn[i]);
+            btn[i] = new JButton(jsonArr.get(i).toString());
+            btn[i].addActionListener(this);
+            add(btn[i]);
+        }
+        repaint();
+        revalidate();
     }
 }
