@@ -24,12 +24,15 @@ public class PanMain extends JPanel implements ActionListener {
     String Options;
     String placeHolderOption = "";
     int i = 1;
+    
+    FileReader reader;
+    JSONParser parser;
 
     public PanMain() throws Exception {
         label = new JLabel();
 
-        FileReader reader = new FileReader(filePath);
-        JSONParser parser = new JSONParser();
+        reader = new FileReader(filePath);
+        parser = new JSONParser();
         object = (JSONObject) parser.parse(reader);
 
 
@@ -60,11 +63,13 @@ public class PanMain extends JPanel implements ActionListener {
         String questions = (String) object.get("Q" + i);
         System.out.println(questions);
         jsonArr = (JSONArray) object.get("Answers" + i);
+         JSONObject options = (JSONObject) parser.parse(reader);
         //   btn = new JButton[3];
         for (int i = 0; i < btn.length; i++) {
             //Remove old buttons and make new buttons based on new options
             remove(btn[i]);
             btn[i] = new JButton(jsonArr.get(i).toString());
+            
             btn[i].addActionListener(this);
             add(btn[i]);
         }
