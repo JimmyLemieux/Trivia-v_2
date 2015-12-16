@@ -1,11 +1,9 @@
-{ 
-        "question": "1. Which cartoon television show based on the Griffin family became popular in the early 2000s?",
-        "a1": "a) The Simpsons",
-        "a2": "b) Futurama",
-        "a3": "c) Family Guy",
-        "a4": "d) Spongebob",
-        
-        
+{
+    "question": "1. Which cartoon television show based on the Griffin family became popular in the early 2000s?",
+    "a1": "a) The Simpsons",
+    "a2": "b) Futurama",
+    "a3": "c) Family Guy",
+    "a4": "d) Spongebob",
 }
 
 

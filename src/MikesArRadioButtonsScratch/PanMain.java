@@ -15,7 +15,6 @@ import javax.swing.JRadioButton;
 public class PanMain extends JPanel {
 
     JRadioButton[] radioButton = new JRadioButton[4];
-    
 
     public PanMain() {
 
@@ -25,10 +24,10 @@ public class PanMain extends JPanel {
         radioButton[3] = new JRadioButton("Question D");
 
         ButtonGroup bG = new ButtonGroup();
-        
-            for (int i = 0; i < radioButton.length;i++){
-                bG.add(radioButton[i]);
-                this.add(radioButton[i]);
-            }
+
+        for (int i = 0; i < radioButton.length; i++) {
+            bG.add(radioButton[i]);
+            this.add(radioButton[i]);
+        }
     }
 }

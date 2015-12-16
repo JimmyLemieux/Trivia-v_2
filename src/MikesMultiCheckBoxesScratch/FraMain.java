@@ -21,6 +21,6 @@ public class FraMain extends JFrame {
         this.setResizable(true);
         setLocationRelativeTo(null);
         setVisible(true);
-        
+
     }
 }

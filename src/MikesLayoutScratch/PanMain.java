@@ -8,7 +8,6 @@ package MikesLayoutScratch;
  *
  * @author burtm5944
  */
-
 import java.awt.BorderLayout;
 import javax.swing.JCheckBox;
 import javax.swing.JPanel;
@@ -24,6 +23,6 @@ class PanMain extends JPanel {
     public PanMain() {
         setLayout(new BorderLayout());
         add(panBoxes, BorderLayout.NORTH);
-        
+
     }
 }

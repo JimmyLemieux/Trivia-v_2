@@ -1,0 +1,9 @@
+{
+"question1":[
+        {"question": "1. Which cartoon television show based on the Griffin family became popular in the early 2000s?"},
+        {"firstAnswer": "a) The Simpsons"},
+        {"secondAnswer": "b) Futurama"},
+        {"thirdAnswer": "c) Family Guy"},
+        {"fourthAnswer": "d) Spongebob"},
+        ]
+}

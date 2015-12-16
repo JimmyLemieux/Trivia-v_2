@@ -27,14 +27,14 @@ public class TVQA {
         FileReader readerObj = new FileReader("H:\\NetBeansProjects\\Trivia Quiz\\Trivia\\src\\QuestionScratch\\TVq&a.json");
         JSONParser parserObj = new JSONParser();
         JSONObject jsonObject = (JSONObject) parserObj.parse(readerObj);
+        String sQuestion = (String) jsonObject.get("question");
+        System.out.println(sQuestion);
+        
+        for (int i = 1; i < 5; i++) {  //this is a loop
+            String sAnswer = (String) jsonObject.get("a" + i);
+            System.out.println(sAnswer);
 
-            String sQuestion = (String) jsonObject.get("question");
-            System.out.println(sQuestion);
-            for (int i = 1; i < 5; i++) {  //this is a loop
-                String sAnswer = (String) jsonObject.get("a" + i);
-                System.out.println(sAnswer);
-
-            }
+        }
         sInput = sin.next();
         if (sInput.equals("c")) {
             System.out.println("Correct!");

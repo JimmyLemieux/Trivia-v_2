@@ -1,0 +1,48 @@
+{
+"question1":[
+        {"question": "1. Which cartoon television show based on the Griffin family became popular in the early 2000s?"},
+        {"firstAnswer": "a) The Simpsons"},
+        {"secondAnswer": "b) Futurama"},
+        {"thirdAnswer": "c) Family Guy"},
+        {"fourthAnswer": "d) Spongebob"},
+        ]
+}
+{
+"question2":[
+        {"question": "2. The popular 1990s TV show ""The Fresh Prince of Bel-Air"" featured which superstar actor and rapper at the beginning of his career?"},
+        {"firstAnswer": "a) Will Smith"},
+        {"secondAnswer": "b) Tupac Shakur"},
+        {"thirdAnswer": "c) Ice Cube"},
+        {"fourthAnswer": "d) Notorious B.I.G."}
+        ]
+}
+{
+"question3":[
+
+        {"question":"3. What is the longest running TV series?"},
+        {"firstAnswer":"a) Lassie"},
+        {"secondAnswer":"b) The Simpsons"},
+        {"thirdAnswer":"c) Law & Order"},
+        {"fourthAnswer":"d) King of the Hill"}
+        ]
+}
+{
+"question4":[
+
+        {"question":"4. What is the highest rated drama TV series? According to IMDb"},
+        {"firstAnswer":"a) The X-Files"},
+        {"secondAnswer":"b) Breaking Bad"},
+        {"thirdAnswer":"c) Game of Thrones"},
+        {"fourthAnswer":"d) The Sopranos"}
+        ]
+}
+{
+"question5":[
+        {"question":"5. Which show won an Emmy for Outstanding Drama Series in 2015?"},
+        {"firstAnswer":"a) Mad Men"},
+        {"secondAnswer":"b) Downton Abbey"},
+        {"thirdAnswer":"c) Orange is the New Black"},
+        {"fourthAnswer":"d) Game of Thrones"}
+        ]
+}
+
