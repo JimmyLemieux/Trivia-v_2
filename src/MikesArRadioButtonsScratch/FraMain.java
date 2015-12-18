@@ -4,15 +4,16 @@
  */
 package MikesArRadioButtonsScratch;
 
+
 import javax.swing.JFrame;
 
 /**
  *
  * @author burtm5944
  */
-public class FraMain extends JFrame {
-
-    public FraMain() {
+public class FraMain extends JFrame{
+    
+    public FraMain(){
         PanMain panMain = new PanMain();
         add(new PanMain());
         setTitle("ArRadioButtonsScratch");

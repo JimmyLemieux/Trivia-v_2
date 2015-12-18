@@ -17,24 +17,23 @@ import javax.swing.JPanel;
  *
  * @author lemij7026
  */
-public class PanMain extends JPanel implements ActionListener, ItemListener {
+public class PanMain extends JPanel implements ActionListener,ItemListener {
 
     JCheckBox box;
     JCheckBox box1;
-
-    public PanMain() {
-        this.setLayout(new GridLayout(2, 3));
+    public PanMain(){
+            this.setLayout(new GridLayout(2,3));
         box = new JCheckBox();
         box.setText("The question");
         box.addItemListener(this);
-        //   add(box,BorderLayout.NORTH);    
+     //   add(box,BorderLayout.NORTH);    
         add(box);
-
+        
         box1 = new JCheckBox();
         box1.setText("Question2");
         add(box1);
     }
-
+    
     @Override
     public void actionPerformed(ActionEvent e) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -44,4 +43,5 @@ public class PanMain extends JPanel implements ActionListener, ItemListener {
     public void itemStateChanged(ItemEvent e) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    
 }

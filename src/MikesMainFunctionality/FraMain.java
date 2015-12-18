@@ -1,5 +1,5 @@
 
-package MainFunctionality;
+package MikesMainFunctionality;
 
 import javax.swing.JFrame;
 

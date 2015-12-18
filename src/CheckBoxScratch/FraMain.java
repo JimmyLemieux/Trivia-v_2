@@ -1,12 +1,11 @@
-package CheckBoxScratch;
 
+package CheckBoxScratch;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-
 public class FraMain extends JFrame {
-
-    public FraMain() {
+    
+    public FraMain(){
         PanMain pan = new PanMain();
         //setLayout(new BorderLayout());
         add(new PanMain());
@@ -16,6 +15,6 @@ public class FraMain extends JFrame {
         this.setResizable(true);
         setLocationRelativeTo(null);
         setVisible(true);
-
+    
     }
 }
