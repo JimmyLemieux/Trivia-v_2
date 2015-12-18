@@ -59,7 +59,7 @@ public class PanMain extends JPanel implements ActionListener {
 
     //The Refresh button function
     public void updateButton() {
-        String questions = (String) object.get("Q" + i);
+        String questions = (String) object.get("a" + i);
         System.out.println(questions);
         jsonArr = (JSONArray) object.get("Answers" + i);
         //JSONObject options = (JSONObject) parser.parse(reader);
