@@ -33,6 +33,7 @@ public class FraMain extends JFrame implements ActionListener {
         panMain.btn3.addActionListener(this);
         panMain.btn4.addActionListener(this);
         panMain.btn5.addActionListener(this);
+        panMainGame.btnNext.addActionListener(this);
         panMainGame.btnBack.addActionListener(this);
     }
 
@@ -70,6 +71,13 @@ public class FraMain extends JFrame implements ActionListener {
         if(event.getSource() == panMainGame.btnBack) {
             add(panMain);
             remove(panMainGame);
+            repaint();
+            revalidate();
+        }
+        if(event.getSource() == panMainGame.btnNext) {
+            remove(panMainGame);
+            panMainGame = new PanMainGame();
+            add(panMainGame);
             repaint();
             revalidate();
         }

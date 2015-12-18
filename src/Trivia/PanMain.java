@@ -5,6 +5,7 @@
 package Trivia;
 
 import java.awt.BorderLayout;
+import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
@@ -14,6 +15,7 @@ import javax.swing.JPanel;
  */
 public class PanMain extends JPanel {
 
+    public static PanMainGame panMainGame = new PanMainGame();
     JButton btn;
     JButton btn2;
     JButton btn3;

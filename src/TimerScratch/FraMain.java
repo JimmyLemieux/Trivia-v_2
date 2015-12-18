@@ -16,12 +16,17 @@ public class FraMain extends JFrame {
     public FraMain(){
         PanMain pan = new PanMain();
         setLayout(new FlowLayout());
+        add(new PanMain());
         setTitle("The Timer");
-        
-        
-        
+        setVisible(true);
+        setSize(1000,200);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setResizable(true);
         
     }
+
+   
+    
     
     
 }
