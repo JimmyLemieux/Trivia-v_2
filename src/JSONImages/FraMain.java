@@ -10,7 +10,7 @@ import java.awt.event.*;
 import java.awt.*;
 import java.net.MalformedURLException;
 public class FraMain extends JFrame{
-    public FraMain() throws MalformedURLException{
+    public FraMain() throws Exception{
         setLayout(new BorderLayout());
         add(new PanMain());
         setTitle("HeyJSONImages");
