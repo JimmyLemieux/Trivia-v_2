@@ -17,15 +17,15 @@ public final class PanMain extends JPanel implements ActionListener {
     String filePath = "H:\\NetBeansProjects\\Trivia\\src\\MainFunctionality\\JSON.json";
     JLabel label;
     JButton[] btn;
-    //int i;
     JSONObject object;
     JSONArray jsonArr;
-    String Options;
-    String placeHolderOption = "";
     int i = 1;
-    
     FileReader reader;
     JSONParser parser;
+    
+    
+    JLabel qsLabel;
+    
 
     public PanMain() throws Exception {
         label = new JLabel();
@@ -56,12 +56,14 @@ public final class PanMain extends JPanel implements ActionListener {
     }
 
     //The Refresh button function
+    //Whenever the button is updated.. Changed the Question
     public void updateButton() {
         String questions = (String) object.get("Q" + i);
         System.out.println(questions);
         jsonArr = (JSONArray) object.get("Answers" + i);
-         //JSONObject options = (JSONObject) parser.parse(reader);
-        //   btn = new JButton[3];
+        remove(qsLabel);
+        qsLabel = new JLabel(questions);
+        add(qsLabel);
         for (int j = 0; j < btn.length; j++) {
             //Remove old buttons and make new buttons based on new options
             remove(btn[j]);
