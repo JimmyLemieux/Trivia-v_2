@@ -15,7 +15,7 @@ public class Main {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws MalformedURLException {
+    public static void main(String[] args) throws MalformedURLException, Exception {
         FraMain main = new FraMain();
     }
 }
