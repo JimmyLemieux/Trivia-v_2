@@ -1,0 +1,42 @@
+{
+    "Q1": "1. Which cartoon television show based on the Griffin family became popular in the early 2000s?",
+    "Answers1": [
+        {"a1": "a) The Simpsons"},
+        {"a2": "b) Futurama"},
+        {"a3": "c) Family Guy"},
+        {"a4": "d) Spongebob"}
+    ],
+        
+    "Q2": "2. The popular 1990s TV show Fresh Prince of Bel-Air featured which superstar actor and rapper at the beginning of his career?",
+    "Answers2": [
+        {"a1": "a) Will Smith"},
+        {"a2": "b) Tupac Shakur"},
+        {"a3": "c) Ice Cube"},
+        {"a4": "d) Notorious B.I.G."}
+
+    ],          
+    "Q3": "3. What is the longest running TV series?",
+    "Answers3": [
+        {"a1": "a) Lassie"},
+        {"a2": "b) The Simpsons"},
+        {"a3": "c) Law & Order"},
+        {"a4": "d) King of the Hill"}
+
+    ],
+    "Q4": "4. What is the highest rated drama TV series? According to IMDb",
+    "Answers4": [
+        {"a1": "a) The X-Files"},
+        {"a2": "b) Breaking Bad"},
+        {"a3": "c) Game of Thrones"},
+        {"a4": "d) The Sopranos"}
+
+    ],           
+    "Q5": "5. Which show won an Emmy for Outstanding Drama Series in 2015?",
+    "Answers5": [
+        {"a1": "a) Mad Men"},
+        {"a2": "b) Downton Abbey"},
+        {"a3": "c) Orange is the New Black"},
+        {"a4": "d) Game of Thrones"}
+
+    ]
+}
