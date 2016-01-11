@@ -1,0 +1,54 @@
+{
+    "Q1": "1. Which US president had a big part in ending slavery in America in the 1860's and was assisnated",
+    "Answers1": [
+        {"a1": "a) George W Bush"},
+        {"a2": "b) Abraham Lincoln"},
+        {"a3": "c) Ronald Reagan"},
+        {"a4": "d) Donald Trump"}
+    ],
+    "Q2": "2. Which current US presidet canidate is currently the leader of the Republican Party?",
+    "Answers2": [
+        {"a1": "a) Barrack Obama"},
+        {"a2": "b) Hilary Clinton"},
+        {"a3": "c) Donald Trump"},
+        {"a4": "d) George W Bush"}
+
+    ],
+    "Q3": "3. Who is the current Russian president and was re-elected in 2012 with his previous run lasting from 1999-2008?",
+    "Answers3": [
+        {"a1": "a) Joseph Stalin"},
+        {"a2": "b) Dmitry Medvedev"},
+        {"a3": "c) Boris Yeltsin"},
+        {"a4": "d) Vladmir Putin"}
+
+    ],
+    "Q4": "4. Who is the current sumpreme leader of North Korea and had a father who was a sumpreme leader of North Korea?",
+    "Answers4": [
+        {"a1": "a) Kim Jong Un"},
+        {"a2": "b) Pak Pong-Ju"},
+        {"a3": "c) Kim-Yong-nam"},
+        {"a4": "d) Yao Ming"}
+
+    ],
+    "Q5": "5. Who was the 2nd Prime Minister in Canada and was the first Prime Minister to represent the Libreal Party?",
+    "Answers5": [
+        {"a1": "a) Sir John A Maconald"},
+        {"a2": "b) Justin Trudeau"},
+        {"a3": "c) Stephen Harper"},
+        {"a4": "d) Alexander Mackenzie"}
+    ],
+    "Images": [
+        {"Image1": "Lincoln.jpg"},
+        {"Image2": "RL.jpg"},
+        {"Image3": "Russia.jpg"},
+        {"Image4": "NK.jpg"},
+        {"Image5": "Liberal.jpg"}
+    ],
+    "AnswerKey": [
+        {"A1": 1},
+        {"A2": 2},
+        {"A3": 3},
+        {"A4": 0},
+        {"A5": 3},
+    ],
+}

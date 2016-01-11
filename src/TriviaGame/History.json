@@ -1,0 +1,58 @@
+{
+    "Q1": "1. What was the the big reason for why World War 1 started?",
+    "Answers1": [
+        {"a1": "a) Assination of Franz Fredinand"},
+        {"a2": "b) Adolf Hitler's Invasion of Poland"},
+        {"a3": "c) Resources or Lack of Resources"},
+        {"a4": "d) Land Control"}
+    ],
+        
+    "Q2": "Who was the leader of the Nazi Party in World War 2 and the dictator of Germany?",
+    "Answers2": [
+        {"a1": "a) Adolf Hitler"},
+        {"a2": "b) Winston Churchill"},
+        {"a3": "c) John F. Kennedy"},
+        {"a4": "d) Johannes Rau"}
+
+    ],          
+    "Q3": "3. Which two Japanese cities did the USA drop an atomic bomb on to end the second World War?",
+    "Answers3": [
+        {"a1": "a) Tokyo and Hiroshima"},
+        {"a2": "b) Tokyo and Nagasaki"},
+        {"a3": "c) Hiroshima and Nagasaki"},
+        {"a4": "d) Yokohama and Osaka"}
+
+    ],
+    "Q4": "4. Who assianated US president John F. Kennedy?",
+    "Answers4": [
+        {"a1": "a) Lee Harvey Oswald"},
+        {"a2": "b) Gauliro Princep"},
+        {"a3": "c) John Wilkes Booth"},
+        {"a4": "d) Leon Czolgosz"}
+
+    ],           
+    "Q5": "5. Who won World War 2?",
+    "Answers5": [
+        {"a1": "a) The Axis"},
+        {"a2": "b) The Allies"},
+        {"a3": "c) Tie"},
+        {"a4": "d) Other"}
+  ],
+     
+     "Images" :[
+        {"Image1" : "WW1.jpg"},
+        {"Image2" : "Nazi.jpg"},
+        {"Image3" : "Bomb.jpg"},
+        {"Image4" : "JFK.jpg"},
+        {"Image5" : "WW2.jpg"}
+        
+    ],
+            
+     "AnswerKey" : [
+        {"A1" : 0},
+        {"A2" : 0},
+        {"A3" : 2},
+        {"A4" : 0},
+        {"A5" : 1},
+     ],
+}

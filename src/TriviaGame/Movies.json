@@ -1,0 +1,56 @@
+{
+    "Q1": "1. What is the highest rated movie according to IMDB with a current rating of 9.2?",
+    "Answers1": [
+        {"a1": "a) The Godfather"},
+        {"a2": "b) The Godfather: Part II"},
+        {"a3": "c) Pulp Fiction"},
+        {"a4": "d) Shawshank Redemption"}
+    ],
+    "Q2": "2. Which actor played Batman in the Dark Knight series and was known for his iconic voice?",
+    "Answers2": [
+        {"a1": "a) Christian Bale"},
+        {"a2": "b) Ben Afleck"},
+        {"a3": "c) Tom Hanks"},
+        {"a4": "d) Morgan Freeman"}
+
+    ],
+    "Q3": "3. Which actress has won the most Oscars of all time with a record of 4 oscar wins?",
+    "Answers3": [
+        {"a1": "a) Sandra Bullock"},
+        {"a2": "b) Jeniffer Aniston"},
+        {"a3": "c) Maryl Streep"},
+        {"a4": "d) Katharine Hepburn"}
+
+    ],
+    "Q4": "4. Which actor played the charachter Mark Watney in the film The Martian which was released in 2015?",
+    "Answers4": [
+        {"a1": "a) Tom Hanks"},
+        {"a2": "b) Matt Damon"},
+        {"a3": "c) Nick Cage"},
+        {"a4": "d) Will Smith"}
+
+    ],
+    "Q5": "5. Which actor is known for the catchphrase Alright, Alright, Alright and starred in the series True Detective?",
+    "Answers5": [
+        {"a1": "a) Will Smith"},
+        {"a2": "b) Donald Glover"},
+        {"a3": "c) Andre 3000"},
+        {"a4": "d) Matthew McConaughey"}
+    ],
+    "Images": [
+        {"Image1": "SSR.jpg"},
+        {"Image2": "TDK.jpg"},
+        {"Image3": "Oscar.jpg"},
+        {"Image4": "Martian.jpg"},
+        {"Image5": "MM.jpg"}
+
+    ],
+    "AnswerKey": [
+        {"A1": 3},
+        {"A2": 0},
+        {"A3": 3},
+        {"A4": 1},
+        {"A5": 3},
+    ],
+}
+
